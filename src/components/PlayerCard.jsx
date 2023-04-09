@@ -7,7 +7,7 @@ const Playercard = (props) => {
    // console.log(props);
 
     return (
-        <div>
+        <div class="single-player-card">
           
           <div>{player && player.name}</div>
           <div>{player && player.id}</div>

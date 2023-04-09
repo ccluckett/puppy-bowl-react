@@ -9,7 +9,7 @@ const Players = ({players, selectedPlayer, setSelectedPlayer}) => {
     return (
     <>
        <div id="all-players-container">
-      {players.map((player) => {
+           {players.map ((player) => {
           return <Playercard  key={player.id} player={player} selectedPlayer={selectedPlayer} setSelectedPlayer={setSelectedPlayer}/>
       })};
       

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PlayerForm from './PlayerForm';
+import SearchBar from './SearchBar';
 import Players from './Players';
 import { fetchAllPlayers } from '../api/ajaxHelper';
 import { fetchSinglePlayer } from '../api/ajaxHelper';
@@ -37,14 +37,13 @@ useEffect(() => {
   if(selectedPlayer.id) {return (
     <>
        <SinglePlayer selectedPlayer={selectedPlayer}  setSelectedPlayer={setSelectedPlayer}/>
-      {/*<Players players={players}  selectedPlayer={selectedPlayer} setSelectedPlayer={setSelectedPlayer}/> */}
+      
     </>
     );} else {
 
         return (
         <>
-          {/* <SinglePlayer selectedPlayer={selectedPlayer} /> */}
-           <PlayerForm />
+           <SearchBar /> 
            <Players players={players}  selectedPlayer={selectedPlayer} setSelectedPlayer={setSelectedPlayer}/>
         </>
         );}
